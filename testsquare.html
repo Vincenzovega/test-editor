@@ -8,32 +8,26 @@
 <style>
 #testsquare {
 		position:relative;
-		top:100px;
-		left:100px;
 		width: 100px; 
 		height: 100px; 
 		background-color:#ccc;
 		border:3px solid black;
 }
-#testsquare:before {
+#testsquare:before, #testsquare:after {
 	position:absolute;
 	content:'';
 	width:0;
 	height:0;
 	left:100%;
+}
+#testsquare:before {
+	
 	top:10px;
-	border-width:10px;
 	border:12px solid transparent;
 	border-left-color:black;
 }
 #testsquare:after {
-	position:absolute;
-	content:'';
-	width:0;
-	height:0;
-	left:100%;
 	top:13px;
-	border-width:10px;
 	border:8px solid transparent;
 	border-left-color:#ccc;
 }
