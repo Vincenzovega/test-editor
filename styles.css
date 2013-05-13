@@ -4,31 +4,64 @@
 	bottom:0;
 	left:0;
 	right:0;
-	padding-left:10px;
-	padding-right:10px;
+	margin:40px;
+	
+	-webkit-box-shadow: 0px 5px 10px #888;
 }
 #tabbar {
-	width:100%;
+	padding: 1px 5px 1px 5px;
+	
+	border:1px solid #cccccc;
+	border-radius:5px 5px 0px 0px;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		color-stop(0%,#f5f6f6), 
+		color-stop(21%,#dbdce2), 
+		color-stop(49%,#b8bac6), 
+		color-stop(80%,#dddfe3), 
+		color-stop(100%,#f5f6f6)); /* Chrome,Safari4+ */ 
 	
 }
 .tab {
-	padding:3px;
+	-webkit-transition-property:background-color;
+	-webkit-transition-duration: 0.5s;
+	text-align:center;
+	padding:2px;
 	width:64px;
-	border-radius:10px 10px 0px 0px;
-	background-color:#bbbbbb;
+	border-radius:6px;
+	-webkit-box-shadow: inset 0px 2px 5px #888;
+	margin:4px;
+	background-color:#cccccc;
 	
-	border:1px solid black;
-	border-bottom:1px solid white;
 }
+.tab:hover {
+	background-color:#ffffff;
+}
+.active {
+	background-color:#ff0000;
+}
+
+#toolbar{
+	width:100%;
+	height:32px;
+	border:1px solid #cccccc;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		color-stop(0%,#f5f6f6), 
+		color-stop(21%,#dbdce2), 
+		color-stop(49%,#b8bac6), 
+		color-stop(80%,#dddfe3), 
+		color-stop(100%,#f5f6f6)); /* Chrome,Safari4+ */
+}
+
 #editor {
 	position:relative;
-	border:0px solid black;
 	margin-top:-1px;
-	width:100%;
-	height:80%;
+	width:100%;	height:80%;
+	border:0px solid #cccccc;
 }
 #debug {
-	border:1px solid red;
+	border:1px solid #cccccc;
 	width:100%;
 
 }

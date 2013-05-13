@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>This is a test page with node</title>
+<script type ="text/javascript" src="jquery-2.0.0.min.js"></script>
+<script type = "text/javascript" src="script.js"></script>
+<script src="http://rawgithub.com/ajaxorg/ace-builds/master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<style>
+#testsquare {
+		position:relative;
+		top:100px;
+		left:100px;
+		width: 100px; 
+		height: 100px; 
+		background-color:#ccc;
+		border:3px solid black;
+}
+#testsquare:before {
+	position:absolute;
+	content:'';
+	width:0;
+	height:0;
+	left:100%;
+	top:10px;
+	border-width:10px;
+	border:12px solid transparent;
+	border-left-color:black;
+}
+#testsquare:after {
+	position:absolute;
+	content:'';
+	width:0;
+	height:0;
+	left:100%;
+	top:13px;
+	border-width:10px;
+	border:8px solid transparent;
+	border-left-color:#ccc;
+}
+
+
+</style>
+</head>
+<body>
+	<header><h1>Playground</h1></header>
+	<div class="main">
+	<div id = "testsquare">test<div>
+	</div>
+		
+</div>    
+
+
+</body>
+</html>
+
